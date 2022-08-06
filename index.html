@@ -59,6 +59,19 @@
             text-align: top;
         }
     </style>
+    <script type="text/javascript">
+        function f1(){
+            var str=document.getElementById("fname").value;
+            
+            let str2="https://script.google.com/macros/s/AKfycbxJMiE8kFsHuw52ZbInP5_yQxKOTzVpDbjiG0YOH498Zu-HMqb-KAn4OwKWcka3vZ1pew/exec?program_name=";
+            console.log(str2+str);
+            
+            window.location.href = (str2+str);
+            
+
+
+        }
+    </script>
 </head>
 
 <body style="background-image: linear-gradient(to right, yellow, rgba(255,0,0,1));">
@@ -78,11 +91,12 @@
                         <td><label for="lname">Category: </label></td>
                         <td><input type="text" id="lname" name="lname"><br><br></td>
                     </tr>
-                    <tr class="subli">
+<!--                     <tr class="subli">
                         <td><input type="submit" value="Submit" id="sub"></td>
-                    </tr>
+                    </tr> -->
 
                 </table>
+                <button onclick="f1()" id="button">submit form</button>
             </form>
         </div>
 
