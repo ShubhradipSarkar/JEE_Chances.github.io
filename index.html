@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check your chances</title>
     <style>
-        #info{
+        body {
+            /* border: solid 1px red; */
+            height: 95vh;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
 
-            position: absolute;
+        .wrapper {
+            display: block;
+            /* flex-direction: column; */
+        }
+
+        #info {
+            /* border: solid 10px magenta; */
+            /* position: absolute; */
             color: whitesmoke;
-            left: 38%;
-            bottom: 70%;
+            /* left: 38%; */
+            /* bottom: 70%; */
             font-family: cursive;
             font-size: large;
             text-shadow: 1px 1px 2px black;
-            
-        };
-        #forminfo{
 
-            text-align: center;
-            
-        };
+        }
+
+
+
+        #forminfo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 5px;
+            display: flex;
+        }
+
+        #sub {
+            position: middle;
+            align-items: center;
+        }
+
+        .subli {
+            border: 2px solid black;
+            align-items: center;
+        }
+
+        table {
+            border: 2px solid;
+        }
+
+        tr {
+            text-align: top;
+        }
     </style>
 </head>
-<body style="background-color:rgb(240, 18, 85)">
-    <div id="info">
-        <h1>Know your Chances</h1>
+
+<body style="background-image: linear-gradient(to right, yellow, rgba(255,0,0,1));">
+    <div class="wrapper">
+        <div id="info">
+            <h1>Know your Chances</h1>
+        </div>
+        <br><br>
+        <div id="forminfo">
+            <form onsubmit="fun()">
+                <table>
+                    <tr>
+                        <td><label for="fname">Branch Preference:</label></td>
+                        <td><input type="text" id="fname" name="fname"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Category: </label></td>
+                        <td><input type="text" id="lname" name="lname"><br><br></td>
+                    </tr>
+                    <tr class="subli">
+                        <td><input type="submit" value="Submit" id="sub"></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+
     </div>
-    <div id="forminfo">
-        <form onsubmit="fun()">
-            <label for="fname">Branch Preferance</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Category
-    
-            </label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-          </form>
-    </div>
+
     <script src="index.js"></script>
 </body>
+
 </html>
