@@ -40,8 +40,17 @@
 
         #forminfo {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 5px;
+            /* padding: ; */
             display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #bal {
+            padding: 1px;
+            margin: 5px;
+
+
         }
 
         .subli {
@@ -51,14 +60,18 @@
 
         table {
             border: 2px solid;
+            display: flex;
+            justify-content: center;
+
         }
 
         tr {
             text-align: top;
         }
 
-        button {
+        #button {
             justify-content: center;
+            align-items: center;
 
         }
 
@@ -169,16 +182,16 @@
             <span style="--i:15">S</span>
         </div>
         <br><br>
-        <div id="forminfo" class="col-sm-12">
+        <div id="forminfo" class="col-sm-12 rounded-pill">
             <form onsubmit="fun()">
                 <table>
                     <tr>
-                        <td><label for="fname">Branch Preference:</label></td>
-                        <td><input type="text" id="fname" name="fname"><br><br></td>
+                        <td><label for="fname" id="bal">Branch Preference:</label></td>
+                        <td><input type="text" id="fname" name="fname" class="opacity-50"><br><br></td>
                     </tr>
                     <tr>
-                        <td><label for="lname">Category: </label></td>
-                        <td><input type="text" id="lname" name="lname"><br><br></td>
+                        <td><label for="lname" id="bal">Category: </label></td>
+                        <td><input type="text" id="lname" name="lname" class="opacity-50"><br><br></td>
                     </tr>
                     <!--                     <tr class="subli">
                         <td><input type="submit" value="Submit" id="sub"></td>
@@ -186,11 +199,13 @@
 
                 </table>
 
-            </form><br>
+            </form><br><br>
 
         </div>
         <div class="row">
-            <div class="col-sm-6"><button onclick="f1()" id="button" class="btn btn-info btn-lg">Submit Form</button>
+            <div class="d-flex justify-content-center"><button onclick="f1()" id="button"
+                    class="btn btn-info btn-lg">Submit
+                    Form</button>
             </div>
         </div>
     </div>
