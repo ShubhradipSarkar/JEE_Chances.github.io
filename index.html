@@ -11,12 +11,19 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <style>
         body {
-            /* border: solid 1px red; */
+            margin: 0px;
+            padding: 0px;
+            background-color: #151719;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            min-height: 100vh;
             height: 95vh;
             padding: 4px;
             display: flex;
-            justify-content: center;
-            align-items: top;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: top; */
         }
 
         .wrapper {
@@ -60,9 +67,9 @@
 
         table {
             border: 2px solid;
-            display: flex;
+            display: block;
             justify-content: center;
-
+            align-items: center;
         }
 
         tr {
@@ -83,14 +90,6 @@
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #151719;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
         .waviy {
             position: relative;
             -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
@@ -100,7 +99,7 @@
         .waviy span {
             font-family: 'Alfa Slab One', cursive;
             position: relative;
-            display: inline-block;
+            display: inline-flex;
             color: #fff;
             text-transform: uppercase;
             animation: waviy 1s infinite;
@@ -120,6 +119,11 @@
                 transform: translateY(-20px)
             }
         }
+
+        #nobita {
+            position: relative;
+        }
+
 
         /* .animate-charcter {
             text-transform: uppercase;
@@ -153,94 +157,97 @@
 </head>
 
 <body style="background-image: linear-gradient(to right, yellow, rgba(255,0,0,1));">
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-light navbar-fixed-top" id="nobita">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">JEE Chances</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="josaa.nic.in">JoSAA</a></li>
+                                <li><a class="dropdown-item" href="nitdgp.ac.in">NIT Durgapur</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="iitkgp.ac.in">IIT Kharagpur</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class="waviy">
-            <span style="--i:1">K</span>
-            <span style="--i:2">N</span>
-            <span style="--i:3">O</span>
-            <span style="--i:4">W</span>
-            <span style="--i:5">Y</span>
-            <span style="--i:6">O</span>
-            <span style="--i:7">U</span>
-            <span style="--i:8">R</span>
-            <span style="--i:9">C</span>
-            <span style="--i:10">H</span>
-            <span style="--i:11">A</span>
-            <span style="--i:12">N</span>
-            <span style="--i:13">C</span>
-            <span style="--i:14">E</span>
-            <span style="--i:15">S</span>
-        </div>
-        <br><br>
-        <div id="forminfo" class="col-sm-12 rounded-pill">
-            <form onsubmit="fun()">
-                <table>
-                    <tr>
-                        <td><label for="fname" id="bal">Branch Preference:</label></td>
-                        <td><input type="text" id="fname" name="fname" class="opacity-50"><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="lname" id="bal">Category: </label></td>
-                        <td><input type="text" id="lname" name="lname" class="opacity-50"><br><br></td>
-                    </tr>
-                    <!--                     <tr class="subli">
+        </nav>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="waviy">
+                <span style="--i:1">H</span>
+                <span style="--i:2">B</span>
+                <span style="--i:3">D</span>
+                <span style="--i:4">S</span>
+                <span style="--i:5">H</span>
+                <span style="--i:6">U</span>
+                <span style="--i:7">B</span>
+                <span style="--i:8">H</span>
+                <span style="--i:9">R</span>
+                <span style="--i:10">A</span>
+                <span style="--i:11">D</span>
+                <span style="--i:12">I</span>
+                <span style="--i:13">P</span>
+                <!-- <span style="--i:14">E</span>
+                <span style="--i:15">S</span> -->
+            </div>
+            <br><br>
+            <div id="forminfo" class="col-sm-12 rounded-pill">
+                <form onsubmit="fun()">
+                    <table>
+                        <tr>
+                            <td><label for="fname" id="bal">Branch Preference:</label></td>
+                            <td><input type="text" id="fname" name="fname" class="opacity-50"><br><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname" id="bal">Category: </label></td>
+                            <td><input type="text" id="lname" name="lname" class="opacity-50"><br><br></td>
+                        </tr>
+                        <!--                     <tr class="subli">
                         <td><input type="submit" value="Submit" id="sub"></td>
                     </tr> -->
 
-                </table>
+                    </table>
 
-            </form><br><br>
+                </form><br><br>
 
-        </div>
-        <div class="row">
-            <div class="d-flex justify-content-center"><button onclick="f1()" id="button"
-                    class="btn btn-info btn-lg">Submit
-                    Form</button>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center"><button onclick="f1()" id="button"
+                        class="btn btn-info btn-lg">Submit
+                        Form</button>
+                </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
     <script src="index.js"></script>
 </body>
