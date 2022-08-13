@@ -155,6 +155,22 @@
             color: floralwhite;
 
         }
+
+        nav ul li a:hover {
+            background: #243342;
+        }
+
+        nav ul ul {
+            position: absolute;
+            top: 60 px;
+            display: none;
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+            background: #2d77c1;
+            text-decoration: solid;
+        }
     </style>
     <script src='index.js'>
 
@@ -199,7 +215,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Search Colleges"
+                            aria-label="Search Colleges">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
