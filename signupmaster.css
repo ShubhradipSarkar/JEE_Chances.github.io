@@ -88,7 +88,9 @@ h1 {
 
 nav ul li a:hover {
   background: #243342;
+  text-decoration: solid;
   transform: scale(1.25);
+  color: white;
 }
 
 nav ul ul {
