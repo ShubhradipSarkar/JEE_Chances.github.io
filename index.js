@@ -1,6 +1,6 @@
 function f1() {
     var str = document.getElementById("fname").value;
-    var str_category=document.getElementById("bal").value;
+    var str_category=document.getElementById("lname").value;
     let str3 = "&category=";
     
     let str_category_addition = str3+str_category;
